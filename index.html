@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="75j5GPIh2JTtNlEniZMYWiApP7UUEZh6e3E42wUnK4o" />
+  <!-- --------- UNICONS ---------- -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <!-- --------- CSS ---------- -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- --------- FAVICON ---------- -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <title>Portfolio | Imran Azmi</title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .con {
+      width: 190vmin;
+      left: 50%;
+      top: 120px;
+      background-color: #ffffff;
+      box-shadow: 1px 8px 10px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .tabs {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .h3 {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 15px 0;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .tab-content {
+      background-color: #ffffff;
+      padding: 50px 40px;
+    }
+
+    .tab-content h4 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #000224;
+      font-weight: 600;
+    }
+
+    .tab-content p {
+      text-align: justify;
+      line-height: 1.9;
+      letter-spacing: 0.4px;
+      color: #202238;
+    }
+
+    .tab-content div {
+      display: none;
+    }
+
+    .tab-content .active {
+      display: block;
+    }
+
+    .tabs .active {
+      background-color: rgb(110, 87, 224);
+      color: #ffffff;
+    }
+
+    @media only screen and (max-width: 1600px) {
+        .con {
+        width: 180vmin;
+      }
+    }
+    @media only screen and (max-width: 1500px) {
+        .con {
+        width: 170vmin;
+      }
+    }
+    @media only screen and (max-width: 1450px) {
+        .con {
+        width: 165vmin;
+      }
+    }
+    @media only screen and (max-width: 1400px) {
+        .con {
+        width: 160vmin;
+      }
+    }
+    @media only screen and (max-width: 1350px) {
+        .con {
+        width: 155vmin;
+      }
+    }
+    @media only screen and (max-width: 1300px) {
+        .con {
+        width: 150vmin;
+      }
+    }
+    @media only screen and (max-width: 1250px) {
+        .con {
+        width: 145vmin;
+      }
+    }
+    @media only screen and (max-width: 1200px) {
+        .con {
+        width: 140vmin;
+      }
+    }
+    @media only screen and (max-width: 1150px) {
+        .con {
+        width: 135vmin;
+      }
+    }@media only screen and (max-width: 1100px) {
+        .con {
+        width: 130vmin;
+      }
+    }
+    @media only screen and (max-width: 1050px) {
+        .con {
+        width: 120vmin;
+      }
+    }
+    @media only screen and (max-width: 1000px) {
+        .con {
+        width: 115vmin;
+      }
+    }
+    @media only screen and (max-width: 950px) {
+        .con {
+        width: 110vmin;
+      }
+      .tabs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media only screen and (max-width: 900px) {
+        .con {
+        width: 100vmin;
+      }
+    }
+    @media only screen and (max-width: 850px) {
+        .con {
+        width: 95vmin;
+      }
+    }
+    @media only screen and (max-width: 800px) {
+        .con {
+        width: 90vmin;
+      }
+    }
+    @media only screen and (max-width: 750px) {
+        .con {
+        width: 85vmin;
+      }
+    }
+    @media only screen and (max-width: 700px) {
+        .con {
+        width: 85vmin;
+      }
+    }
+    @media only screen and (max-width: 650px) {
+        .con {
+        width: 85vmin;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+        .con {
+        width: 85vmin;
+      }
+    }
+    @media only screen and (max-width: 550px) {
+        .con {
+        width: 85vmin;
+      }
+    }
+    @media only screen and (max-width: 500px) {
+        .con {
+        width: 85vmin;
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- --------------- HEADER --------------- -->
+    <nav id="header">
+      <div class="nav-logo">
+        <p class="nav-name">Imran</p>
+        <span>.</span>
+      </div>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+          <li class="nav_list">
+            <a href="#home" class="nav-link active-link">Home</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#about" class="nav-link">About</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#projects" class="nav-link">Projects</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#contact" class="nav-link">Contact</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <!-- <a href="assets/Certificate Showcase/certificates.html" class="nav-link">Certifications</a> -->
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <a href="assets/images/Imran_Azmi_Resume.pdf" target="blank_" download>
+          <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+        </a>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+      <!-- -------------- FEATURED BOX ---------------- -->
+      <section class="featured-box" id="home">
+        <div class="featured-text">
+          <div class="featured-text-card">
+            <span>Imran Azmi</span>
+          </div>
+          <div class="featured-name">
+            <p>I'm <span class="typedText"></span></p>
+          </div>
+          <div class="featured-text-info">
+            <p>Aspiring AI Engineer skilled in Python, web development, and machine learning, with hands-on experience in backend development and a passion for building innovative AI solutions.
+            </p>
+          </div>
+          <div class="featured-text-btn">
+            <button class="btn blue-btn">Hire Me</button>
+            <a href="assets/images/Imran_Azmi_Resume.pdf" target="blank_" download>
+              <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </a>
+          </div>
+          <div class="social_icons">
+            <a href="https://www.instagram.com/imranyazmi/" target="blank_">
+              <div class="icon"><i class="uil uil-instagram"></i></div>
+            </a>
+            <a href="https://www.linkedin.com/in/imranyazmi/" target="blank_">
+              <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+            </a>
+            <a href="https://www.youtube.com/@imranyazmi" target="blanck_">
+              <div class="icon"><i class="uil uil-youtube"></i></div>
+            </a>
+            <a href="https://github.com/Imranyazmi" target="blank_">
+              <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </a>
+          </div>
+        </div><br>
+        <div class="featured-image">
+          <div class="image">
+            <img src="assets/images/avatar.png" alt="avatar">
+          </div>
+        </div>
+        <div class="scroll-icon-box">
+          <a href="#about" class="scroll-btn">
+            <i class="uil uil-mouse-alt"></i>
+            <p>Scroll Down</p>
+          </a>
+        </div>
+
+      </section>
+      <!-- -------------- ABOUT BOX ---------------- -->
+      <section class="section" id="about">
+        <div class="top-header">
+          <h1>About Me</h1>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="about-info">
+              <h3>My introduction</h3>
+              <p>Aspiring AI Engineer with foundational experience in Python programming and web development through an internship at SkillVertex. Developed backend applications using Django and collaborated on coding best practices and application testing. Skilled in machine learning and data analytics with a strong interest in contributing to innovative AI projects. Eager to leverage technical skills and collaborative spirit to drive impactful solutions.
+              </p>
+              <br>
+              <div class="about-btn">
+                <a href="assets/images/Imran_Azmi_Resume.pdf" target="blank_" download>
+                  <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skills-box">
+              <div class="skills-header">
+                <h3>Language</h3>
+              </div>
+              <div class="skills-list">
+                <span>Python</span>
+                <span>Java</span>
+                <span>C</span>
+                <span>C++</span>
+              </div>
+            </div>
+            <div class="skills-box">
+              <div class="skills-header">
+                <h3>Web Development</h3>
+              </div>
+              <div class="skills-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>PHP</span>
+                <span>JavaScript</span>
+                <span>Django</span>
+              </div>
+            </div>
+            <div class="skills-box">
+              <div class="skills-header">
+                <h3>Other Skill</h3>
+              </div>
+              <div class="skills-list">
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Scikit-learn</span>
+                <span>TensorFlow</span>
+                <span>Keras</span>
+                <span>matplotlib</span>
+                <span>PyTorch</span>
+                <span>MySQL</span>
+                <span>SQLite</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------- PROJECT BOX ---------------- -->
+
+      <section class="section" id="projects">
+        <div class="top-header">
+          <h1>Projects</h1>
+        </div>
+        <div class="con">
+          <div class="tabs">
+            <h3 class="active h3">Project 1</h3>
+            <h3 class="h3">Project 2</h3>
+            <h3 class="h3">Project 3</h3>
+            <h3 class="h3">Project 4</h3>
+          </div>
+          <div class="tab-content">
+            <div class="active">
+              <h4>Credit Card Fraud Detection Using Machine Learning</h4>
+                <strong><br>
+                  <p>Project Description: </p>
+                </strong><br>
+
+                • Built a fraud detection model using Random Forest algorithm in Python.<br>
+                • Successfully classified legitimate and fraudulent transactions.<br>
+                • Applied data preprocessing, feature selection, and model evaluation techniques.
+
+            </div>
+
+            <div>
+              <h4>Dynamic Certificate Generator</h4>
+              <!-- <img class="project_img" src="assets/images/project2.1.png"><br><br><br><br> -->
+              <p><br>
+                <strong>
+                  <p>Image Classification</p>
+                </strong><br>
+              • Developed an image classification model using Convolutional Neural Networks (CNN).<br>
+              • Utilized TensorFlow/Keras and pre-trained models for accuracy.<br>
+              • Focused on model training, validation, and performance metrics.
+          </p>
+            </div>
+
+            <div>
+              <h4>Stock Seeker</h4>
+              <!-- <img class="project_img" src="assets/images/project3.3.png"> -->
+              <p>
+                <strong>
+                  <p>Seamless File Transfer via QR Code</p>
+                </strong> <br>
+                • Created a secure and efficient file-sharing system using Python and QR code generation.<br>
+                • Utilized libraries such as qrcode and Flask for backend and QR rendering.
+              </p>
+            </div>
+
+            <div>
+              <h4>Innovative eLearning Platform </h4>
+              <p>
+                • A modern digital education portal offering interactive learning experiences with customizable course content, integrated video lectures,
+and a built-in IDE for running and testing code. It bridges the gap between learners and educators through cutting-edge solutions.
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="project-container">
+           <div class="project-box">
+               <i class="uil uil-briefcase-alt"></i>
+               <h3>Completed</h3>
+               <label>15+ Finished Projects</label>
+           </div>
+           <div class="project-box">
+               <i class="uil uil-users-alt"></i>
+               <h3>Clients</h3>
+               <label>25+ Happy Clients</label>
+           </div>
+           <div class="project-box">
+               <i class="uil uil-award"></i>
+               <h3>Experience</h3>
+               <label>7+ Years in the field</label>
+           </div>
+         </div> -->
+      </section>
+      <br>
+
+      <!-- -------------- CONTACT BOX ---------------- -->
+
+      <section class="section" id="contact">
+        <div class="top-header">
+          <h1>Get in touch</h1>
+          <span>Do you have a project in your mind, contact me here</span>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="contact-info">
+              <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+              <p><i class="uil uil-phone"></i> Tel: +91 8850737105</p>
+              <p><i class="uil uil-envelope"></i> Email: imranyazmi@gmail.com</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-control">
+              <form>
+                <div class="form-inputs">
+                  <input type="text" class="input-field" placeholder="Name">
+                  <input type="text" class="input-field" placeholder="Email">
+                </div>
+                <div class="text-area">
+                  <textarea placeholder="Message"></textarea>
+                </div>
+                <div class="form-button">
+                  <!-- <button type="" class="btn">Send <i class="uil uil-message"></i></button> -->
+                  <input type="submit" class="btn" value="Send" name=""><i class="uil uil-message"></i>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+      <div class="top-footer">
+        <p>Imran Azmi .</p>
+      </div>
+      <div class="middle-footer">
+        <ul class="footer-menu">
+          <li class="footer_menu_list">
+            <a href="#home">Home</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#about">About</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social_icons">
+        <a href="https://www.instagram.com/imranyazmi/" target="blank_">
+          <div class="icon"><i class="uil uil-instagram"></i></div>
+        </a>
+        <a href="https://www.linkedin.com/in/imranyazmi/" target="blank_">
+          <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+        </a>
+        <a href="https://www.youtube.com/@imranyazmi" target="blanck_">
+          <div class="icon"><i class="uil uil-youtube"></i></div>
+        </a>
+        <a href="https://github.com/Imranyazmi" target="blank_">
+          <div class="icon"><i class="uil uil-github-alt"></i></div>
+        </a>
+      </div>
+      <div class="bottom-footer">
+        <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Imran Azmi</a> - All rights reserved</p>
+      </div>
+    </footer>
+
+  </div>
+
+
+
+
+  <!-- ----- TYPING JS Link ----- -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- ----- SCROLL REVEAL JS Link----- -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- ----- MAIN JS ----- -->
+  <script src="assets/js/main.js"></script>
+
+  <script type="text/javascript">
+    let tabs = document.querySelectorAll(".tabs h3");
+    let tabContents = document.querySelectorAll(".tab-content div");
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => {
+        tabContents.forEach((content) => {
+          content.classList.remove("active");
+        });
+        tabs.forEach((tab) => {
+          tab.classList.remove("active");
+        });
+        tabContents[index].classList.add("active");
+        tabs[index].classList.add("active");
+      });
+    });
+
+  </script>
+</body>
+
+</html>
